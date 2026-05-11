@@ -1,0 +1,15 @@
+[project]
+name = "openalex-neo4j-qa"
+version = "0.1.0"
+description = "OpenAlex Property Graph QA Prototype"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "neo4j>=5.0.0",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

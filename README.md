@@ -17,6 +17,19 @@ This project translates natural language questions into read-only Cypher queries
 - Local or remote **Neo4j** database running with OpenAlex data loaded.
 - **Azure OpenAI** API access.
 
+## Fetching OpenAlex Data
+
+To populate the Neo4j database, you'll need to fetch the academic data from the OpenAlex API. For this prototype, we used a dataset of ~500 papers related to "neuro-symbolic AI".
+
+You can fetch this data yourself and save it to `openalex.json` (which is ignored by Git to avoid pushing large datasets):
+
+```bash
+# Fetch papers about neuro-symbolic AI
+curl "https://api.openalex.org/works?search=neuro-symbolic%20AI&per-page=200" > openalex.json
+```
+
+*(Note: In a full pipeline, you would use a script to handle pagination and load this JSON directly into Neo4j using the Python driver).*
+
 ## Setup
 
 1. **Install dependencies:**
