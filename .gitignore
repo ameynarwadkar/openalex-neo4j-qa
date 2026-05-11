@@ -1,2 +1,11 @@
 .env
 venv
+
+# Add these lines to your .gitignore
+__pycache__/
+*.pyc
+.env
+venv/
+.idea/
+.vscode/
+*.log
