@@ -11,3 +11,6 @@ venv/
 *.log
 *.json
 openalex.json
+
+
+openalex_works.json
