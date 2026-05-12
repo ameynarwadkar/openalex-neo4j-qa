@@ -82,22 +82,27 @@ MATCH (a:Author)-[w:WORKS_ON]->(c:Concept)
 
 **1. Natural Language to Cypher Interactive CLI**  
 Demonstrates the CLI translating a natural language query into a Cypher query, executing it against the graph, and summarizing the result.
+
 <img src="screenshots/nl_to_cypher_demo.png" width="600" alt="NL to Cypher Demo">
 
 **2. OpenAlex Knowledge Graph Visualization**  
 A visual representation of the academic data structure in Neo4j Browser, illustrating the connections between Authors, Works, and Concepts.
+
 <img src="screenshots/graph_visualization.png" width="600" alt="Graph Visualization">
 
 **3. Dataset Node Summary**  
 Summary table displaying the distribution and counts of entities (Works, Authors, Concepts, Institutions) present in the database.
+
 <img src="screenshots/node_counts.png" width="600" alt="Node Counts">
 
 **4. Graph Relationship Statistics**  
 Overview of the connections between distinct nodes and their total frequencies within the knowledge graph.
+
 <img src="screenshots/relationship_counts.png" width="600" alt="Relationship Counts">
 
 **5. Symbolic Rule Derivation (`WORKS_ON`)**  
 Displays the execution and result of applying a Cypher rule to derive explicit `WORKS_ON` relationships, enriching the graph for advanced reasoning.
+
 <img src="screenshots/rule_works_on.png" width="600" alt="Rule Works On">
 
 ---
